@@ -34,7 +34,7 @@ To deploy SellySecure on your Linux server, follow these steps:
 
 ```bash
   git clone https://github.com/selwyngomes/SecureAudit.git
-cd your-repository
+  cd your-repository
 ```
 2. Make the Script Executable: Before running the script, ensure it is executable by running:
 
@@ -54,19 +54,19 @@ cd your-repository
 6. Automatic Updates Configuration
 - To ensure your server receives and installs security updates automatically, configure unattended-upgrades:
 ```bash
-apt-get install -y unattended-upgrades
-dpkg-reconfigure --priority=low unattended-upgrades
+   apt-get install -y unattended-upgrades
+   dpkg-reconfigure --priority=low unattended-upgrades
 ```
 7. Customizing Hardening Measures
 - If you need to customize specific hardening measures (e.g., firewall rules or SSH settings), edit the script directly or update the configuration files used by the script.
 8. Scheduled Runs (Optional)
 - To automate the running of the script, consider adding it to a cron job. For example, to run the script daily at midnight:
 ```bash
-crontab -e
+   crontab -e
 ```
 - Add the following line to the crontab file:
 ```bash
-0 0 * * * /path/to/your-repository/selly_secaudit.sh
+   0 0 * * * /path/to/your-repository/selly_secaudit.sh
 ```
 - Replace /path/to/your-repository/ with the path where you cloned the repository.
 
