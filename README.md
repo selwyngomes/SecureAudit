@@ -66,7 +66,7 @@ To deploy SellySecure on your Linux server, follow these steps:
 ```
 - Add the following line to the crontab file:
 ```bash
-   0 0 * * * /path/to/your-repository/selly_secaudit.sh
+0 0 * * * /path/to/your-repository/selly_secaudit.sh
 ```
 - Replace /path/to/your-repository/ with the path where you cloned the repository.
 
